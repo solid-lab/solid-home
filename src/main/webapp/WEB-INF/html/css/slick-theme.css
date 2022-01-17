@@ -1,0 +1,388 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'NanumSquareL';
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.slick-prev:before
+{
+    content: '<';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '>';
+}
+
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '>';
+
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '<';
+
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 0;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+    display: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 999;
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 15px;
+    height: 15px;
+    margin: 0 10px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 45px;
+    line-height: 10px;
+    background-color: #fff;
+    border-radius: 45px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 25px;
+    height: 10px;
+
+    content: '';
+    text-align: center;
+
+    opacity:1;
+    color:#fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity:1;
+    background-color: #3598f3;
+    border-radius: 45px;
+}
+
+
+
+
+
+/* 솔리드 main */
+.slider1 .slick-dots
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1600px;
+    height: 40px;
+    text-align: left;
+    margin-top: 160px;
+}
+.slider1 .slick-dots li {
+    width: 22px;
+    height: 22px;
+    margin: 0 10px 0 0;
+}
+.slider1 .slick-dots li button {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+}
+.slider1 .slick-dots li button:before
+{
+    background-color: transparent;
+    width: 22px;
+    height: 22px;
+    content: url(../images/dot_b.png);
+}
+.slider1 .slick-dots li.slick-active button:before
+{
+    content: url(../images/dot_a.png);
+
+}
+
+
+/* 솔리드 sub1 */
+.rolling_sec ul .slick-prev,
+.rolling_sec ul .slick-next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rolling_sec ul .slick-prev{
+    background-color: transparent;
+    left: 0;
+}
+.rolling_sec ul .slick-next{
+    background-color: transparent;
+    right: 0;
+}
+.rolling_sec ul .slick-prev:before
+{
+    content: url(../images/sub_arrow_p.png);
+}
+.rolling_sec ul .slick-next:before
+{
+    content: url(../images/sub_arrow_n.png);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile */
+@media screen and (max-width: 767px){
+
+    .slider1 .slick-dots
+    {
+        width: 100%;
+        text-align: center;
+        margin-top: 150px;
+    }
+    .slider1 .slick-dots li {
+        margin: 0 5px 0;
+    }
+
+
+    .rolling_sec ul .slick-prev,
+    .rolling_sec ul .slick-next{
+        bottom: -90px;
+        transform: none;
+    }
+
+    .rolling_sec ul .slick-prev{
+        left: 5%;
+    }
+    .rolling_sec ul .slick-next{
+        right: 5%;
+    }
+    .rolling_sec ul .slick-prev:before
+    {
+        content: url(../images/m_sub_arrow_p.png);
+    }
+    .rolling_sec ul .slick-next:before
+    {
+        content: url(../images/m_sub_arrow_n.png);
+
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .slider1 .slick-dots
+    {
+        width: 100%;
+        margin-top: 130px;
+    }
+    .slider1 .slick-dots li {
+        margin: 0 0 0 15px;
+    }
+
+    .rolling_sec ul .slick-prev{
+        left: 5%;
+    }
+    .rolling_sec ul .slick-next{
+        right: 5%;
+    }
+
+    .rolling_sec ul .slick-prev:before
+    {
+        content: url(../images/m_sub_arrow_p.png);
+    }
+    .rolling_sec ul .slick-next:before
+    {
+        content: url(../images/m_sub_arrow_n.png);
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* pc mini-size */
+@media screen and (min-width: 1000px) and (max-width: 1680px){
+
+  .slider1 .slick-dots
+  {
+      width: 95%;
+  }
+
+}

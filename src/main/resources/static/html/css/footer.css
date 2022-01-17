@@ -1,0 +1,197 @@
+#footer{
+    width: 100%;
+    background-color: #333;
+}
+
+.f_01{
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.f_01 .main_center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+address{
+    width: 100%;
+    font-style: normal;
+}
+
+.ad{
+    display: flex;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.ad:last-child{
+    margin-bottom: 0;
+}
+
+.circle{
+    width: 7px;
+    height: 7px;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+
+.ad p{
+    font-size: 14px;
+    color: #fff;
+    font-family: 'Pretendard-ExtraLight', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.f_02{
+    width: 100%;
+    font-size: 12px;
+    color: #ccc;
+    font-family: 'Pretendard-ExtraLight', sans-serif;
+    text-align: center;
+    padding: 7px 0;
+    letter-spacing: 0.5px;
+}
+
+.top{
+  width: 50px;
+  height: 50px;
+  background-color: #004B67;
+  color: #fff;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mobile */
+@media screen and (max-width: 767px){
+
+    .f_logo{
+        display: none;
+    }
+
+    .f_01{
+        padding: 15px 0;
+    }
+
+    .f_01 .main_center{
+        display: block;
+    }
+
+    .ad{
+        justify-content: center;
+        margin-bottom: 5px;
+    }
+
+    .circle{
+        display: none;
+    }
+
+    .ad p{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .f_02{
+        font-size: 10px;
+        padding: 5px 0;
+        letter-spacing: 0;
+    }
+
+    .top{
+      display: none !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+    .f_logo{
+        display: none;
+    }
+
+    .f_01{
+        padding: 15px 0;
+    }
+
+    .f_01 .main_center{
+        display: block;
+    }
+
+    .ad{
+        justify-content: center;
+    }
+
+    .circle{
+        display: none;
+    }
+
+    .ad p{
+        font-size: 10px;
+        letter-spacing: 0;
+    }
+
+    .f_02{
+        font-size: 10px;
+        padding: 5px 0;
+        letter-spacing: 0;
+    }
+
+    .top{
+      display: none !important;
+    }
+
+}
